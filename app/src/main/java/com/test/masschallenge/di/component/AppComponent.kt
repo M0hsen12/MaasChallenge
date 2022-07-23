@@ -2,6 +2,9 @@ package com.test.masschallenge.di.component
 
 import android.content.Context
 import com.test.masschallenge.App
+import com.test.masschallenge.di.modules.ActivityInjectorsModule
+import com.test.masschallenge.di.modules.AppModule
+import com.test.masschallenge.di.modules.ViewModelFactoryModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -12,11 +15,10 @@ import javax.inject.Singleton
 @Singleton
 @Component(
     modules = [
-        AndroidSupportInjectionModule::class
-//        ,
-//        ActivityInjectorsModule::class,
-//        ViewModelFactoryModule::class,
-//        AppModule::class
+        AndroidSupportInjectionModule::class,
+        ActivityInjectorsModule::class,
+        ViewModelFactoryModule::class,
+        AppModule::class
     ]
 )
 interface AppComponent : AndroidInjector<App> {

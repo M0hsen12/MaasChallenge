@@ -10,7 +10,6 @@ abstract class ActivityInjectorsModule {
 
 
     @ContributesAndroidInjector(modules = [ FragmentBuildersModule::class])
-
     abstract fun mainActivityInjector(): MapsActivity
 
 

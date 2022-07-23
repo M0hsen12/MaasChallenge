@@ -57,7 +57,7 @@ class NetworkModule {
         client: OkHttpClient
     ): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("https://open-api.myhelsinki.fi")
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(Schedulers.io()))

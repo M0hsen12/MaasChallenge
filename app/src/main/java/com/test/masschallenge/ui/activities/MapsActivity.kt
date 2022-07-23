@@ -11,19 +11,23 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.test.masschallenge.R
 import com.test.masschallenge.databinding.ActivityMapsBinding
-
-class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
+import com.test.masschallenge.di.modules.BindModule
+import com.test.masschallenge.di.viewModelInjections.InjectionViewModelProvider
+import com.test.masschallenge.ui.base.BaseActivity
+import com.test.masschallenge.viewModel.activities.MapsActivityViewModel
+import javax.inject.Inject
+@BindModule
+class MapsActivity  : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
-    private lateinit var binding: ActivityMapsBinding
+    @Inject
+    lateinit var mViewModelFactoryActivity: InjectionViewModelProvider<MapsActivityViewModel>
+    override fun getLayoutId() = R.layout.activity_maps
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        viewModel = mViewModelFactoryActivity.get(this, MapsActivityViewModel::class)
 
-        binding = ActivityMapsBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
