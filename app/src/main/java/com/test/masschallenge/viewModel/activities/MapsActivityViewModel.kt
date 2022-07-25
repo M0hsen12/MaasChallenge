@@ -1,9 +1,13 @@
 package com.test.masschallenge.viewModel.activities
 
 import android.util.Log
+import androidx.lifecycle.MutableLiveData
 import com.test.masschallenge.di.data.appManger.DataManager
+import com.test.masschallenge.model.response.places.Places
 import com.test.masschallenge.ui.base.BaseViewModel
 import io.reactivex.disposables.CompositeDisposable
+import kotlinx.coroutines.delay
+import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 class MapsActivityViewModel @Inject constructor(
@@ -11,9 +15,30 @@ class MapsActivityViewModel @Inject constructor(
     compositeDisposable: CompositeDisposable
 ) : BaseViewModel(dataManager, compositeDisposable) {
 
-init {
-    Log.e("TAG", "view model is rdy: ", )
-}
+    val placesLiveData = MutableLiveData<Places>()
+
+    init {
+        getPlaces(60.188, 24.950)
+    }
+
+    fun getPlaces(lat: Double, lng: Double) {
+        disposable[0]?.dispose()
+        disposable[0] =
+            mDataManager.networkManager.getMassApi()
+                .getPlaces(null, null, "$lat,$lng,10", null, "2", "0")
+                .delay(2000,TimeUnit.MILLISECONDS).subscribe({
+                    Log.e("TAG", "getPlaces: ${it.isSuccessful}")
+                    if (it.isSuccessful) {
+                        Log.e("TAG", "getPlaces: ${it.body()?.data?.size}")
+                        placesLiveData.postValue(it.body())
+                    }
+                }, {
+                    Log.e("TAG", "getPlaces: $it")
+                })
+
+        addDisposable(disposable[0])
+
+    }
 
 
 }

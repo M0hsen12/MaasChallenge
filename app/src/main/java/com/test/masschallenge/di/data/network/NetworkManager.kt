@@ -16,7 +16,7 @@ class NetworkManager @Inject constructor(
         return retrofitRestApi.create(tClass)
     }
 
-    fun getEbayApi(): MassRouter {
+    fun getMassApi(): MassRouter {
         return retrofitRestApi.create(MassRouter::class.java)
     }
 
