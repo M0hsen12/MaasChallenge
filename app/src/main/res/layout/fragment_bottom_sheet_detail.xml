@@ -1,35 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
+        <variable
+            name="fullAddress"
+            type="String" />
 
+        <variable
+            name="fullPostalCode"
+            type="String" />
+
+        <variable
+            name="detail"
+            type="com.test.masschallenge.model.response.detail.Details" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cv_continue"
         style="@style/MyCardView"
-        android:layoutDirection="ltr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
         app:behavior_hideable="true"
-        app:cardBackgroundColor="#ccc"
+        app:cardBackgroundColor="@color/detail_background_color"
         app:cardElevation="5dp"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="500dp">
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="@dimen/eachTextPadding">
 
-            <TextView
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/detail_views_group"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="ASSSS"
-                android:textColor="@color/black"
-                android:textSize="22dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="view,view1,view2"
+                tools:visibility="visible" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="2.5dp"
+                android:background="@drawable/bg_detail_dark_cornered"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginToDivider"
+                android:gravity="center"
+                android:padding="@dimen/eachTextPadding"
+                android:text="@{detail.name.en}"
+                android:textSize="@dimen/detail_title_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="X restaurant" />
+
+            <TextView
+                android:id="@+id/detail_intro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_normal_text"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/eachTextPadding"
+                android:text="@{detail.description.intro}"
+                android:textSize="@dimen/detail_normal_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_title"
+                tools:text="this is intro to x restaurant" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/dividerMarginToSide"
+                android:layout_marginTop="@dimen/marginToDivider"
+                android:layout_marginEnd="@dimen/dividerMarginToSide"
+                android:background="@drawable/bg_detail_dark_cornered"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_intro" />
+
+
+            <TextView
+                android:id="@+id/detail_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginToDivider"
+                android:padding="@dimen/eachTextPadding"
+                android:text="@{fullAddress}"
+                android:textSize="@dimen/detail_normal_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                tools:text="this is address to x restaurant" />
+
+            <TextView
+                android:id="@+id/detail_locality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_normal_text"
+                android:padding="@dimen/eachTextPadding"
+                android:text="@{fullPostalCode}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_address"
+                tools:text="locality to 123456987" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/dividerMarginToSide"
+                android:layout_marginTop="@dimen/marginToDivider"
+                android:layout_marginEnd="@dimen/dividerMarginToSide"
+                android:background="@drawable/bg_detail_dark_cornered"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_locality" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/detail_images_rv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginToDivider"
+                android:minHeight="60dp"
+                android:padding="@dimen/eachTextPadding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+                tools:itemCount="1" />
+
+            <TextView
+                android:id="@+id/detail_images_placeHolder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginToDivider"
+                android:padding="@dimen/eachTextPadding"
+                android:text="@string/error_empty_images"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/view2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/dividerMarginToSide"
+                android:layout_marginTop="@dimen/marginToDivider"
+                android:layout_marginEnd="@dimen/dividerMarginToSide"
+                android:background="@drawable/bg_detail_dark_cornered"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_images_rv" />
+
+            <TextView
+                android:id="@+id/detail_link"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginToDivider"
+                android:layout_marginBottom="@dimen/marginToDivider"
+                android:padding="@dimen/eachTextPadding"
+                android:text="@string/more_info"
+                android:visibility="gone"
+                android:textSize="@dimen/detail_normal_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2"
+                tools:text="LINK" />
+
+
+            <TextView
+                android:id="@+id/detail_body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginToDivider"
+                android:layout_marginBottom="@dimen/marginToDivider"
+                android:padding="@dimen/eachTextPadding"
+                android:text="@{detail.description.body}"
+                android:textSize="@dimen/detail_normal_text_size"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_link"
+                tools:text="this is address to x restaurant" />
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>

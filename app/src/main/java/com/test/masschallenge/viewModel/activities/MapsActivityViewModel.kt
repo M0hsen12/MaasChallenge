@@ -22,8 +22,8 @@ class MapsActivityViewModel @Inject constructor(
     }
 
     fun getPlaces(lat: Double, lng: Double) {
-        disposable[0]?.dispose()
-        disposable[0] =
+        disposable[DISPOSABLE_LOCATIONS]?.dispose()
+        disposable[DISPOSABLE_LOCATIONS] =
             mDataManager.networkManager.getMassApi()
                 .getPlaces(null, null, "$lat,$lng,10", null, "20", "0")
                 .delay(2000,TimeUnit.MILLISECONDS).subscribe({
@@ -36,9 +36,12 @@ class MapsActivityViewModel @Inject constructor(
                     Log.e("TAG", "getPlaces: $it")
                 })
 
-        addDisposable(disposable[0])
+        addDisposable(disposable[DISPOSABLE_LOCATIONS])
 
     }
 
+    companion object {
+        const val DISPOSABLE_LOCATIONS = 0
+    }
 
 }

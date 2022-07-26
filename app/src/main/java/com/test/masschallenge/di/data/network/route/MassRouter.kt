@@ -1,5 +1,6 @@
 package com.test.masschallenge.di.data.network.route
 
+import com.test.masschallenge.model.response.detail.Details
 import com.test.masschallenge.model.response.places.Places
 import io.reactivex.Single
 import retrofit2.Response
@@ -18,5 +19,11 @@ interface MassRouter {
         @Query("limit") limit: String?,
         @Query("start") start: String?,
     ): Single<Response<Places>>
+
+    @GET("/v2/place/{id}")
+    fun getPlaceDetail(
+        @Path("id") id: String?,
+    ): Single<Response<Details>>
+
 
 }

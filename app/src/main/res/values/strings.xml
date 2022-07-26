@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">MassChallenge</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="error_empty_images">there is no image for this location on our server…</string>
+    <string name="more_info">Official WebSite</string>
+    <string name="clickForInfo">click me for info</string>
 </resources>

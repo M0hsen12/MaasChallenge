@@ -56,12 +56,11 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
 
     private fun setupMarkers(data: List<DataItem>?) {
         data?.forEach {
-            Log.e("TAG", "setupMarkers:${it.id} ")
             val a = mMap.addMarker(
                 MarkerOptions()
                     .position(LatLng(it.location.lat, it.location.lon))
                     .title(it.name.en)
-                    .snippet("it.name.en")
+                    .snippet(getString(R.string.clickForInfo))
                     .icon(
                         BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)
                     )
@@ -85,8 +84,7 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-        // Add a marker in Sydney and move the camera
-//        https://open-api.myhelsinki.fi/v1/places/?limit=1
+
         val helsinki = LatLng(60.188, 24.950)
 
         mMap.addMarker(MarkerOptions().position(helsinki).title("Marker in helsinki"))
@@ -97,8 +95,15 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
     }
 
     override fun onMarkerClick(marker: Marker): Boolean {
-        val a = FragmentBottomSheetDetail.newInstance(marker.tag.toString())
-        a.show(supportFragmentManager, "asss")
+        Log.e("TAG", "onMarker222Click: ${marker.tag}")
+        val detail = FragmentBottomSheetDetail.newInstance(marker.tag.toString())
+        detail.show(supportFragmentManager, BOTTOM_SHEET_DETAIL_TAG)
         return false
+    }
+
+
+    companion object {
+        const val BOTTOM_SHEET_DETAIL_TAG = "BottomSheetDetail"
+
     }
 }
