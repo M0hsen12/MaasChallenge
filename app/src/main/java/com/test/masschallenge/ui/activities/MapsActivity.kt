@@ -18,6 +18,7 @@ import com.test.masschallenge.di.modules.BindModule
 import com.test.masschallenge.di.viewModelInjections.InjectionViewModelProvider
 import com.test.masschallenge.model.response.places.DataItem
 import com.test.masschallenge.ui.base.BaseActivity
+import com.test.masschallenge.ui.bottomSheet.FragmentBottomSheetDetail
 import com.test.masschallenge.viewModel.activities.MapsActivityViewModel
 import java.util.ArrayList
 import javax.inject.Inject
@@ -57,11 +58,16 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
         data?.forEach {
             Log.e("TAG", "setupMarkers:${it.id} ")
             val a = mMap.addMarker(
-                MarkerOptions().position(LatLng(it.location.lat, it.location.lon)).icon(
-                    BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)
-                )
+                MarkerOptions()
+                    .position(LatLng(it.location.lat, it.location.lon))
+                    .title(it.name.en)
+                    .snippet("it.name.en")
+                    .icon(
+                        BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)
+                    )
             )
             a?.tag = it.id
+
         }
 
     }
@@ -85,13 +91,14 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
 
         mMap.addMarker(MarkerOptions().position(helsinki).title("Marker in helsinki"))
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(helsinki, 17F))
+        mMap.setOnMarkerClickListener(this)
 
         viewModel?.getPlaces(helsinki.latitude, helsinki.longitude)
     }
 
     override fun onMarkerClick(marker: Marker): Boolean {
-        Log.e("TAG", "onMarkerClick:${marker.tag} " )
-
-        return true
+        val a = FragmentBottomSheetDetail.newInstance(marker.tag.toString())
+        a.show(supportFragmentManager, "asss")
+        return false
     }
 }

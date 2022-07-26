@@ -13,6 +13,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".ui.activities.MapsActivity" />
+
+        <FrameLayout
+            android:id="@+id/design_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

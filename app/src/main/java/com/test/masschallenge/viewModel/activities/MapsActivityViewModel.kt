@@ -25,7 +25,7 @@ class MapsActivityViewModel @Inject constructor(
         disposable[0]?.dispose()
         disposable[0] =
             mDataManager.networkManager.getMassApi()
-                .getPlaces(null, null, "$lat,$lng,10", null, "2", "0")
+                .getPlaces(null, null, "$lat,$lng,10", null, "20", "0")
                 .delay(2000,TimeUnit.MILLISECONDS).subscribe({
                     Log.e("TAG", "getPlaces: ${it.isSuccessful}")
                     if (it.isSuccessful) {
