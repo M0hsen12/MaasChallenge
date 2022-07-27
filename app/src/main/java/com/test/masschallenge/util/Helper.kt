@@ -1,11 +1,13 @@
 package com.test.masschallenge.util
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.drawable.Drawable
+import android.location.LocationManager
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.ReplacementSpan
@@ -14,9 +16,12 @@ import android.view.LayoutInflater
 import android.view.Window
 import android.widget.TextView
 import androidx.annotation.StyleRes
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.databinding.DataBindingUtil
 import com.test.masschallenge.R
+import com.test.masschallenge.databinding.DialogSimpleMapProgressBinding
 import com.test.masschallenge.databinding.DialogSimpleProgressBinding
+import dagger.android.support.DaggerAppCompatActivity
 import kotlin.math.roundToInt
 
 fun materialSimpleProgressDialog(
@@ -34,9 +39,25 @@ fun materialSimpleProgressDialog(
         )
         setContentView(binder.root)
     }
+
+}fun materialSimpleMapProgressDialog(
+    context: Context,
+    @StyleRes theme: Int = R.style.ThemeDialog_Dark
+): Dialog {
+    return Dialog(context, theme).apply {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        setCancelable(true)
+        val binder = DataBindingUtil.inflate<DialogSimpleMapProgressBinding>(
+            LayoutInflater.from(context),
+            R.layout.dialog_simple_map_progress,
+            null,
+            false
+        )
+        setContentView(binder.root)
+    }
 }
 
-fun createUnderLineOnText(view: TextView, txt:String){
+fun createUnderLineOnText(view: TextView, txt: String) {
     SpannableString(txt).apply {
         setSpan(
             object : ReplacementSpan() {
@@ -101,4 +122,24 @@ fun createUnderLineOnText(view: TextView, txt:String){
         view.setText(this, TextView.BufferType.SPANNABLE)
     }
 
+}
+
+fun isLocationIsOn(activity: Activity, onError: ((e: Exception) -> Unit)? = null): Boolean {
+
+    val lm = activity.getSystemService(DaggerAppCompatActivity.LOCATION_SERVICE) as LocationManager
+    var gpsEnabled = false
+    var networkEnabled = false
+    try {
+        gpsEnabled = lm.isProviderEnabled(LocationManager.GPS_PROVIDER)
+    } catch (ex: Exception) {
+        Log.e("TAG", "isLocationServicesThere: $ex")
+        onError?.invoke(ex)
+    }
+    try {
+        networkEnabled = lm.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
+    } catch (ex: Exception) {
+        onError?.invoke(ex)
+        Log.e("TAG", "isLocationServicesThere1: $ex")
+    }
+    return !gpsEnabled && !networkEnabled
 }

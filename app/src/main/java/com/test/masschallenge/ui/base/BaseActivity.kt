@@ -5,16 +5,17 @@ import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import dagger.android.support.DaggerAppCompatActivity
+import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
 
 abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel> : DaggerAppCompatActivity() {
 
-    private var disposable: Disposable? = null
-
     lateinit var binding: T
 
     open var viewModel: V? = null
+
+    open var disposable = CompositeDisposable()
 
 
     @LayoutRes
@@ -34,7 +35,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel> : DaggerAppC
 
     override fun onDestroy() {
         super.onDestroy()
-        disposable?.let {
+        disposable.let {
             if (!it.isDisposed) {
                 it.dispose()
             }

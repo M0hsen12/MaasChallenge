@@ -18,7 +18,7 @@ class MapsActivityViewModel @Inject constructor(
     val placesLiveData = MutableLiveData<Places>()
 
     init {
-        getPlaces(60.188, 24.950)
+//        getPlaces(60.188, 24.950)
     }
 
     fun getPlaces(lat: Double, lng: Double) {
@@ -26,7 +26,7 @@ class MapsActivityViewModel @Inject constructor(
         disposable[DISPOSABLE_LOCATIONS] =
             mDataManager.networkManager.getMassApi()
                 .getPlaces(null, null, "$lat,$lng,10", null, "20", "0")
-                .delay(2000,TimeUnit.MILLISECONDS).subscribe({
+                .subscribe({
                     Log.e("TAG", "getPlaces: ${it.isSuccessful}")
                     if (it.isSuccessful) {
                         Log.e("TAG", "getPlaces: ${it.body()?.data?.size}")

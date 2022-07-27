@@ -4,4 +4,10 @@
     <string name="error_empty_images">there is no image for this location on our server…</string>
     <string name="more_info">Official WebSite</string>
     <string name="clickForInfo">click me for info</string>
+    <string name="gps_network_not_enabled">gps network not enabled</string>
+    <string name="nope">nope</string>
+    <string name="askForLocation">your location is off, please turn it on...</string>
+    <string name="setting">setting</string>
+    <string name="permissionDenied">We cant Operate if You don\'t give us the permission</string>
+    <string name="waitForLocation">we are getting your location Please wait a bit...</string>
 </resources>
