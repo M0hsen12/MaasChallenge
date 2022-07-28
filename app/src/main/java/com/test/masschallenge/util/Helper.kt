@@ -21,6 +21,10 @@ import androidx.databinding.DataBindingUtil
 import com.test.masschallenge.R
 import com.test.masschallenge.databinding.DialogSimpleMapProgressBinding
 import com.test.masschallenge.databinding.DialogSimpleProgressBinding
+import com.test.masschallenge.model.MapMarkerEntity
+import com.test.masschallenge.model.response.activities.RowsItem
+import com.test.masschallenge.model.response.places.DataItem
+import com.test.masschallenge.ui.activities.MapsActivity
 import dagger.android.support.DaggerAppCompatActivity
 import kotlin.math.roundToInt
 
@@ -40,7 +44,9 @@ fun materialSimpleProgressDialog(
         setContentView(binder.root)
     }
 
-}fun materialSimpleMapProgressDialog(
+}
+
+fun materialSimpleMapProgressDialog(
     context: Context,
     @StyleRes theme: Int = R.style.ThemeDialog_Dark
 ): Dialog {
@@ -142,4 +148,65 @@ fun isLocationIsOn(activity: Activity, onError: ((e: Exception) -> Unit)? = null
         Log.e("TAG", "isLocationServicesThere1: $ex")
     }
     return !gpsEnabled && !networkEnabled
+}
+
+fun eventsListToMap(list: List<com.test.masschallenge.model.response.events.DataItem>):
+        List<MapMarkerEntity> {
+
+    val tempList = arrayListOf<MapMarkerEntity>()
+
+    list.forEach {
+        tempList.add(
+            MapMarkerEntity(
+                id = it.id,
+                title = it.name.fi,
+                type = MapsActivity.EVENTS_KEY,
+                lat = it.location.lat,
+                lng = it.location.lon
+            )
+        )
+
+    }
+    return tempList
+
+}
+
+fun activitiesListToMap(list: List<RowsItem>):
+        List<MapMarkerEntity> {
+
+    val tempList = arrayListOf<MapMarkerEntity>()
+
+    list.forEach {
+        tempList.add(
+            MapMarkerEntity(
+                id = it.id,
+                title = it.descriptions.en.name,
+                type = MapsActivity.ACTIVITIES_KEY,
+                lat = it.address.location.lon,
+                lng = it.address.location.lat
+            )
+        )
+
+    }
+    return tempList
+}
+
+fun placesListToMap(list: List<DataItem>):
+        List<MapMarkerEntity> {
+
+    val tempList = arrayListOf<MapMarkerEntity>()
+
+    list.forEach {
+        tempList.add(
+            MapMarkerEntity(
+                id = it.id,
+                title = it.name.en,
+                type = MapsActivity.PLACES_KEY,
+                lat = it.location.lat,
+                lng = it.location.lon
+            )
+        )
+
+    }
+    return tempList
 }

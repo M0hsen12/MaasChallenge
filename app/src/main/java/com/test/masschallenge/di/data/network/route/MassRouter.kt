@@ -1,6 +1,8 @@
 package com.test.masschallenge.di.data.network.route
 
+import com.test.masschallenge.model.response.activities.Activities
 import com.test.masschallenge.model.response.detail.Details
+import com.test.masschallenge.model.response.events.Events
 import com.test.masschallenge.model.response.places.Places
 import io.reactivex.Single
 import retrofit2.Response
@@ -18,12 +20,32 @@ interface MassRouter {
         @Query("language_filter") language: String?,
         @Query("limit") limit: String?,
         @Query("start") start: String?,
-    ): Single<Response<Places>>
+    ): Single<Places>
+
 
     @GET("/v2/place/{id}")
     fun getPlaceDetail(
         @Path("id") id: String?,
     ): Single<Response<Details>>
 
+    @GET("/v2/activities")
+    fun getActivities(
+        @Query("tags_search") tagSearch: String?,
+        @Query("tags_filter") tagFilter: String?,
+        @Query("distance_filter") distance: String?, // Syntax: 'lat,lon,range’
+        @Query("language_filter") language: String?,
+        @Query("limit") limit: String?,
+        @Query("start") start: String?,
+    ): Single<Activities>
 
+
+    @GET("/v1/events/")
+    fun getEvents(
+        @Query("tags_search") tagSearch: String?,
+        @Query("tags_filter") tagFilter: String?,
+        @Query("distance_filter") distance: String?, // Syntax: 'lat,lon,range’
+        @Query("language_filter") language: String?,
+        @Query("limit") limit: String?,
+        @Query("start") start: String?,
+    ): Single<Events>
 }

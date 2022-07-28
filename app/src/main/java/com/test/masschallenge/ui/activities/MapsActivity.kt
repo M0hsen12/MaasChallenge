@@ -10,6 +10,8 @@ import android.location.Location
 import android.location.LocationListener
 import android.location.LocationManager
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS
 import android.util.Log
 import android.widget.Toast
@@ -27,16 +29,21 @@ import com.test.masschallenge.R
 import com.test.masschallenge.databinding.ActivityMapsBinding
 import com.test.masschallenge.di.modules.BindModule
 import com.test.masschallenge.di.viewModelInjections.InjectionViewModelProvider
-import com.test.masschallenge.model.response.places.DataItem
+import com.test.masschallenge.model.MapMarkerEntity
+import com.test.masschallenge.model.response.activities.Activities
+import com.test.masschallenge.model.response.events.Events
+import com.test.masschallenge.model.response.places.Places
 import com.test.masschallenge.ui.base.BaseActivity
 import com.test.masschallenge.ui.bottomSheet.FragmentBottomSheetDetail
-import com.test.masschallenge.util.isLocationIsOn
-import com.test.masschallenge.util.materialSimpleMapProgressDialog
+import com.test.masschallenge.util.*
 import com.test.masschallenge.viewModel.activities.MapsActivityViewModel
 import io.reactivex.BackpressureStrategy
+import io.reactivex.Observable
+import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.BehaviorSubject
+import kotlinx.coroutines.delay
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
@@ -68,29 +75,52 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
     }
 
     private fun observeData() {
-        viewModel?.placesLiveData?.observe(this) {
-            it.data?.forEach { dataItem ->
-                listPlaces.add(LatLng(dataItem.location.lat, dataItem.location.lon))
-            }
-            setupMarkers(it.data)
+        viewModel?.locationsLiveData?.observe(this) {
+            setupMarkers(getAllTheLatLng(it))
         }
 
     }
 
-    private fun setupMarkers(data: List<DataItem>?) {
-        data?.forEach {
-            val a = mMap.addMarker(
-                MarkerOptions()
-                    .position(LatLng(it.location.lat, it.location.lon))
-                    .title(it.name.en)
-                    .snippet(getString(R.string.clickForInfo))
-                    .icon(
-                        BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)
-                    )
-            )
-            a?.tag = it.id
+    private fun getAllTheLatLng(triple: Triple<Places, Activities, Events>): ArrayList<MapMarkerEntity> {
+        val markerList = ArrayList<MapMarkerEntity>()
 
-        }
+        markerList.addAll(placesListToMap(triple.first.data.orEmpty()))
+        markerList.addAll(activitiesListToMap(triple.second.rows.orEmpty()))
+        markerList.addAll(eventsListToMap(triple.third.data.orEmpty()))
+
+        return markerList
+    }
+
+
+    private fun setupMarkers(markerList: ArrayList<MapMarkerEntity>) {
+        Log.e("TAG", "setupMarkers: ${markerList.size}")
+
+        disposable.add(
+            Observable.fromIterable(markerList).concatMap {
+                Observable.just(it).delay(100, TimeUnit.MILLISECONDS)
+            }
+                .subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
+                .subscribe { myMarker ->
+                    Log.e("TAG", "setupMarkers:${myMarker.type} ${myMarker.title}${myMarker.lng} -- ${myMarker.lat}")
+                    val a = mMap.addMarker(
+                        MarkerOptions()
+                            .position(LatLng(myMarker.lat ?: 0.0, myMarker.lng ?: 0.0))
+                            .title(myMarker.title)
+                            .snippet(getString(R.string.clickForInfo))
+                            .icon(
+                                BitmapDescriptorFactory.defaultMarker(
+                                    when (myMarker.type) {
+                                        PLACES_KEY -> BitmapDescriptorFactory.HUE_BLUE
+                                        EVENTS_KEY -> BitmapDescriptorFactory.HUE_ORANGE
+                                        else -> BitmapDescriptorFactory.HUE_RED
+
+                                    }
+                                )
+                            )
+                    )
+                    a?.tag = myMarker.id
+                }
+        )
 
     }
 
@@ -215,19 +245,19 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
 
         mMap.addMarker(MarkerOptions().position(helsinki).title("Marker in helsinki"))
         progressDialog.takeIf { it.isShowing }?.dismiss()
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(lat, lng), 17F))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(lat, lng), 16F))
         mMap.setOnMarkerClickListener(this)
 
         viewModel?.getPlaces(lat, lng)
-        Log.e("TAG", "onLocationChanged: $p0.")
-        Log.e("TAG", "onLocationChanged: ${p0.latitude}")
-        Log.e("TAG", "onLocationChanged: ${p0.longitude}")
     }
 
 
     companion object {
         const val BOTTOM_SHEET_DETAIL_TAG = "BottomSheetDetail"
         const val PERMISSION_CODE = 101
+        const val PLACES_KEY = "places"
+        const val ACTIVITIES_KEY = "activities"
+        const val EVENTS_KEY = "events"
 
     }
 }
