@@ -1,0 +1,676 @@
+{
+  "meta": {
+    "count": "3594",
+    "next": "http://open-api.myhelsinki.fi/v1/events/?distance_filter=60.188%2C24.950%2C10&limit=10&start=10"
+  },
+  "data": [
+    {
+      "id": "helsinki:agajr6x5ay",
+      "name": {
+        "fi": "Dreijaus ja meditaatio -kaupunkiretriitti",
+        "en": "Pottery and Meditation Urban Retreat ",
+        "sv": "Keramik och meditation urban retreat",
+        "zh": null
+      },
+      "source_type": {
+        "id": 1,
+        "name": "LinkedEvents"
+      },
+      "info_url": "https://udumbara.fi/",
+      "modified_at": "2022-07-28T18:08:04.841Z",
+      "location": {
+        "lat": 60.1865119934082,
+        "lon": 24.951763153076172,
+        "address": {
+          "street_address": "Kaarlenkatu 15",
+          "postal_code": "00530",
+          "locality": "Helsinki",
+          "neighbourhood": null
+        }
+      },
+      "description": {
+        "intro": "Kaksipäiväinen dreijaus ja meditaatio -workshop järjestetään kesällä englanniksi Udumbara Studiolla.ksi.",
+        "body": "<p>Kaksipäiväinen dreijaus ja meditaatio -workshop järjestetään kesällä englanniksi Udumbara Studiolla.</p>\n<p></p>\n<p></p>\n<p>Udumbara Studio</p>\n<p>16.7.-14.8.2022</p>\n<p></p>\n<p>16.-17.7. / 23.-24.7. / 6.-7.8. / 13.-14.8. klo 10-16</p>\n<p></p>\n<p>Osallistumismaksu 185€ Holvi Shopista</p>",
+        "images": [
+          {
+            "url": "https://api.hel.fi/linkedevents/media/images/IMG_3029-2.jpg",
+            "copyright_holder": "",
+            "license_type": {
+              "id": 1,
+              "name": "All rights reserved."
+            },
+            "media_id": null
+          }
+        ]
+      },
+      "tags": [
+        {
+          "id": "linkedevents:yso:p19245",
+          "name": "workshops"
+        },
+        {
+          "id": "linkedevents:yso:p5231",
+          "name": "meditation"
+        },
+        {
+          "id": "linkedevents:yso:p6213",
+          "name": "wheel throwing"
+        },
+        {
+          "id": "linkedevents:yso:p9270",
+          "name": "courses (societal objects)"
+        }
+      ],
+      "event_dates": {
+        "starting_day": "2022-07-16T07:00:00.000Z",
+        "ending_day": "2022-08-14T13:00:00.000Z",
+        "additional_description": null
+      }
+    },
+    {
+      "id": "helsinki:agajrqebx4",
+      "name": {
+        "fi": "Dreijauskurssi englanniksi",
+        "en": "Pottery Wheel Workshop in English",
+        "sv": "Drejkurs på engelska",
+        "zh": null
+      },
+      "source_type": {
+        "id": 1,
+        "name": "LinkedEvents"
+      },
+      "info_url": "https://udumbara.fi/",
+      "modified_at": "2022-07-28T18:08:04.842Z",
+      "location": {
+        "lat": 60.1865119934082,
+        "lon": 24.951763153076172,
+        "address": {
+          "street_address": "Kaarlenkatu 15",
+          "postal_code": "00530",
+          "locality": "Helsinki",
+          "neighbourhood": null
+        }
+      },
+      "description": {
+        "intro": "Englanninkielinen dreijauskurssi järjestetään Udumbara Studiolla, Kalliossa - tarvittaessa opastusta saa myös suomeksi.",
+        "body": "<p>Englanninkielinen dreijauskurssi järjestetään Udumbara Studiolla, Kalliossa - tarvittaessa opastusta saa myös suomeksi.</p>\n<p></p>\n<p>Udumbara Studio</p>\n<p>4.6.-27.8.2022</p>\n<p></p>\n<p>4.6. / 11.6. / 18.6. klo 11.00</p>\n<p>9.6. / 16.6. / 22.6. klo 16.30&nbsp;</p>\n<p></p>\n<p>14.7. / 21.7. / 28.7. klo 16.30</p>\n<p></p>\n<p>4.8. / 11.8. / 18.8. / 25.8. klo 16.30</p>\n<p>20.8. / 27.8. klo 11.00</p>\n<p></p>\n<p>Osallistumismaksu 85€ Holvi Shopista, kesto 2h 45 min</p>",
+        "images": [
+          {
+            "url": "https://api.hel.fi/linkedevents/media/images/844FC82F-8C72-415B-9B28-860.jpg",
+            "copyright_holder": "",
+            "license_type": {
+              "id": 1,
+              "name": "All rights reserved."
+            },
+            "media_id": null
+          }
+        ]
+      },
+      "tags": [
+        {
+          "id": "linkedevents:yso:p19245",
+          "name": "workshops"
+        },
+        {
+          "id": "linkedevents:yso:p6213",
+          "name": "wheel throwing"
+        },
+        {
+          "id": "linkedevents:yso:p9270",
+          "name": "courses (societal objects)"
+        }
+      ],
+      "event_dates": {
+        "starting_day": "2022-06-04T08:00:00.000Z",
+        "ending_day": "2022-08-28T10:45:00.000Z",
+        "additional_description": null
+      }
+    },
+    {
+      "id": "helsinki:agbd5att5y",
+      "name": {
+        "fi": "Lempeää kehonhuoltoa",
+        "en": null,
+        "sv": null,
+        "zh": null
+      },
+      "source_type": {
+        "id": 1,
+        "name": "LinkedEvents"
+      },
+      "info_url": "https://www.hel.fi/helsinki/fi/sosiaali-ja-terveyspalvelut/sosiaalinen-tuki-ja-toimeentulo/asukastalot/etela/hanna/",
+      "modified_at": "2022-07-28T18:08:04.654Z",
+      "location": {
+        "lat": 60.19024658203125,
+        "lon": 24.948030471801758,
+        "address": {
+          "street_address": "Sturenkatu 12",
+          "postal_code": "00510",
+          "locality": "Helsinki",
+          "neighbourhood": null
+        }
+      },
+      "description": {
+        "intro": "Lempeää kehonhuoltoa maanantaisin 12.9.-5.12.2022 ",
+        "body": "<p>Lempeää kehonhuoltoa –ryhmä maanantaisin klo 12.15.-13.30.&nbsp;</p>\n<p>Mukaan mahtuu 5 Helmi ry:stä ja 5 asukastalo Hannan kävijää. Sitovat ilmoittautumiset  syyskaudeksi.</p>\n<p>Ennakkoilmoittautumiset 5.9. mennessä Hannan vahtimestarille (09) 3107 3933.</p>\n<p>Järjestäjänä Helmi ry ja asukastalo Hanna.&nbsp;&nbsp;</p>\n<p>Etenemme rauhallisesti ja lempeästi sallivassa ilmapiirissa. Menetelminä käytämme pilatesta, joogaa, shindoa, venettelyä ja rentoutumista. Aikaisempaa liikuntataitoa ei tarvita.&nbsp;</p>\n<p>Tervetuloa ryhmään sellaisenaan kuin olet!&nbsp;</p>\n<p>Varaathan mukaan liikuntaan sopivan asun ja oman alustan jos on.&nbsp;</p>\n<p>Huom! Jos et osallistu kolmena peräkkäisenä kertana vapautuu paikkasi seuraavalle.&nbsp;</p>\n<p>Ohjaajana Taina.&nbsp;&nbsp;&nbsp;</p>\n<p>---</p>\n<p>Helsingin kaupungin ylläpitämät Stadin asukastalot ovat kaikille avoimia harrastus- ja kohtaamispaikkoja. Tapahtumat ja retket ovat maksuttomia, harrastusmateriaalit ja matkat omakustanteisia. Ohjelmamuutokset ovat mahdollisia.</p>",
+        "images": [
+          {
+            "url": "https://api.hel.fi/linkedevents/media/images/12.9_Lempe%C3%A4%C3%A4_kehonhuoltoa_Hanna_LinkedEvents_-1440x810px.jpg",
+            "copyright_holder": "",
+            "license_type": {
+              "id": 1,
+              "name": "All rights reserved."
+            },
+            "media_id": null
+          }
+        ]
+      },
+      "tags": [
+        {
+          "id": "linkedevents:yso:p15624",
+          "name": "Pilates method"
+        },
+        {
+          "id": "linkedevents:yso:p1947",
+          "name": "well-being"
+        },
+        {
+          "id": "linkedevents:yso:p10727",
+          "name": "participation"
+        },
+        {
+          "id": "linkedevents:yso:p5590",
+          "name": "adults"
+        },
+        {
+          "id": "linkedevents:yso:p9270",
+          "name": "courses (societal objects)"
+        }
+      ],
+      "event_dates": {
+        "starting_day": "2022-09-12T09:15:00.000Z",
+        "ending_day": "2022-12-05T11:30:00.000Z",
+        "additional_description": null
+      }
+    },
+    {
+      "id": "helsinki:agbd5atkoa",
+      "name": {
+        "fi": "Lempeää kehonhuoltoa",
+        "en": null,
+        "sv": null,
+        "zh": null
+      },
+      "source_type": {
+        "id": 1,
+        "name": "LinkedEvents"
+      },
+      "info_url": "https://www.hel.fi/helsinki/fi/sosiaali-ja-terveyspalvelut/sosiaalinen-tuki-ja-toimeentulo/asukastalot/etela/hanna/",
+      "modified_at": "2022-07-28T18:08:04.654Z",
+      "location": {
+        "lat": 60.19024658203125,
+        "lon": 24.948030471801758,
+        "address": {
+          "street_address": "Sturenkatu 12",
+          "postal_code": "00510",
+          "locality": "Helsinki",
+          "neighbourhood": null
+        }
+      },
+      "description": {
+        "intro": "Lempeää kehonhuoltoa maanantaisin 12.9.-5.12.2022 ",
+        "body": "<p>Lempeää kehonhuoltoa –ryhmä maanantaisin klo 12.15.-13.30.&nbsp;</p>\n<p>Mukaan mahtuu 5 Helmi ry:stä ja 5 asukastalo Hannan kävijää. Sitovat ilmoittautumiset  syyskaudeksi.</p>\n<p>Ennakkoilmoittautumiset 5.9. mennessä Hannan vahtimestarille (09) 3107 3933.</p>\n<p>Järjestäjänä Helmi ry ja asukastalo Hanna.&nbsp;&nbsp;</p>\n<p>Etenemme rauhallisesti ja lempeästi sallivassa ilmapiirissa. Menetelminä käytämme pilatesta, joogaa, shindoa, venettelyä ja rentoutumista. Aikaisempaa liikuntataitoa ei tarvita.&nbsp;</p>\n<p>Tervetuloa ryhmään sellaisenaan kuin olet!&nbsp;</p>\n<p>Varaathan mukaan liikuntaan sopivan asun ja oman alustan jos on.&nbsp;</p>\n<p>Huom! Jos et osallistu kolmena peräkkäisenä kertana vapautuu paikkasi seuraavalle.&nbsp;</p>\n<p>Ohjaajana Taina.&nbsp;&nbsp;&nbsp;</p>\n<p>---</p>\n<p>Helsingin kaupungin ylläpitämät Stadin asukastalot ovat kaikille avoimia harrastus- ja kohtaamispaikkoja. Tapahtumat ja retket ovat maksuttomia, harrastusmateriaalit ja matkat omakustanteisia. Ohjelmamuutokset ovat mahdollisia.</p>",
+        "images": [
+          {
+            "url": "https://api.hel.fi/linkedevents/media/images/12.9_Lempe%C3%A4%C3%A4_kehonhuoltoa_Hanna_LinkedEvents_-1440x810px.jpg",
+            "copyright_holder": "",
+            "license_type": {
+              "id": 1,
+              "name": "All rights reserved."
+            },
+            "media_id": null
+          }
+        ]
+      },
+      "tags": [
+        {
+          "id": "linkedevents:yso:p15624",
+          "name": "Pilates method"
+        },
+        {
+          "id": "linkedevents:yso:p1947",
+          "name": "well-being"
+        },
+        {
+          "id": "linkedevents:yso:p10727",
+          "name": "participation"
+        },
+        {
+          "id": "linkedevents:yso:p5590",
+          "name": "adults"
+        },
+        {
+          "id": "linkedevents:yso:p9270",
+          "name": "courses (societal objects)"
+        }
+      ],
+      "event_dates": {
+        "starting_day": "2022-12-05T10:15:00.000Z",
+        "ending_day": "2022-12-05T11:30:00.000Z",
+        "additional_description": null
+      }
+    },
+    {
+      "id": "helsinki:agbd5atkc4",
+      "name": {
+        "fi": "Lempeää kehonhuoltoa",
+        "en": null,
+        "sv": null,
+        "zh": null
+      },
+      "source_type": {
+        "id": 1,
+        "name": "LinkedEvents"
+      },
+      "info_url": "https://www.hel.fi/helsinki/fi/sosiaali-ja-terveyspalvelut/sosiaalinen-tuki-ja-toimeentulo/asukastalot/etela/hanna/",
+      "modified_at": "2022-07-28T18:08:04.654Z",
+      "location": {
+        "lat": 60.19024658203125,
+        "lon": 24.948030471801758,
+        "address": {
+          "street_address": "Sturenkatu 12",
+          "postal_code": "00510",
+          "locality": "Helsinki",
+          "neighbourhood": null
+        }
+      },
+      "description": {
+        "intro": "Lempeää kehonhuoltoa maanantaisin 12.9.-5.12.2022 ",
+        "body": "<p>Lempeää kehonhuoltoa –ryhmä maanantaisin klo 12.15.-13.30.&nbsp;</p>\n<p>Mukaan mahtuu 5 Helmi ry:stä ja 5 asukastalo Hannan kävijää. Sitovat ilmoittautumiset  syyskaudeksi.</p>\n<p>Ennakkoilmoittautumiset 5.9. mennessä Hannan vahtimestarille (09) 3107 3933.</p>\n<p>Järjestäjänä Helmi ry ja asukastalo Hanna.&nbsp;&nbsp;</p>\n<p>Etenemme rauhallisesti ja lempeästi sallivassa ilmapiirissa. Menetelminä käytämme pilatesta, joogaa, shindoa, venettelyä ja rentoutumista. Aikaisempaa liikuntataitoa ei tarvita.&nbsp;</p>\n<p>Tervetuloa ryhmään sellaisenaan kuin olet!&nbsp;</p>\n<p>Varaathan mukaan liikuntaan sopivan asun ja oman alustan jos on.&nbsp;</p>\n<p>Huom! Jos et osallistu kolmena peräkkäisenä kertana vapautuu paikkasi seuraavalle.&nbsp;</p>\n<p>Ohjaajana Taina.&nbsp;&nbsp;&nbsp;</p>\n<p>---</p>\n<p>Helsingin kaupungin ylläpitämät Stadin asukastalot ovat kaikille avoimia harrastus- ja kohtaamispaikkoja. Tapahtumat ja retket ovat maksuttomia, harrastusmateriaalit ja matkat omakustanteisia. Ohjelmamuutokset ovat mahdollisia.</p>",
+        "images": [
+          {
+            "url": "https://api.hel.fi/linkedevents/media/images/12.9_Lempe%C3%A4%C3%A4_kehonhuoltoa_Hanna_LinkedEvents_-1440x810px.jpg",
+            "copyright_holder": "",
+            "license_type": {
+              "id": 1,
+              "name": "All rights reserved."
+            },
+            "media_id": null
+          }
+        ]
+      },
+      "tags": [
+        {
+          "id": "linkedevents:yso:p15624",
+          "name": "Pilates method"
+        },
+        {
+          "id": "linkedevents:yso:p1947",
+          "name": "well-being"
+        },
+        {
+          "id": "linkedevents:yso:p10727",
+          "name": "participation"
+        },
+        {
+          "id": "linkedevents:yso:p5590",
+          "name": "adults"
+        },
+        {
+          "id": "linkedevents:yso:p9270",
+          "name": "courses (societal objects)"
+        }
+      ],
+      "event_dates": {
+        "starting_day": "2022-11-28T10:15:00.000Z",
+        "ending_day": "2022-11-28T11:30:00.000Z",
+        "additional_description": null
+      }
+    },
+    {
+      "id": "helsinki:agbd5atjwy",
+      "name": {
+        "fi": "Lempeää kehonhuoltoa",
+        "en": null,
+        "sv": null,
+        "zh": null
+      },
+      "source_type": {
+        "id": 1,
+        "name": "LinkedEvents"
+      },
+      "info_url": "https://www.hel.fi/helsinki/fi/sosiaali-ja-terveyspalvelut/sosiaalinen-tuki-ja-toimeentulo/asukastalot/etela/hanna/",
+      "modified_at": "2022-07-28T18:08:04.654Z",
+      "location": {
+        "lat": 60.19024658203125,
+        "lon": 24.948030471801758,
+        "address": {
+          "street_address": "Sturenkatu 12",
+          "postal_code": "00510",
+          "locality": "Helsinki",
+          "neighbourhood": null
+        }
+      },
+      "description": {
+        "intro": "Lempeää kehonhuoltoa maanantaisin 12.9.-5.12.2022 ",
+        "body": "<p>Lempeää kehonhuoltoa –ryhmä maanantaisin klo 12.15.-13.30.&nbsp;</p>\n<p>Mukaan mahtuu 5 Helmi ry:stä ja 5 asukastalo Hannan kävijää. Sitovat ilmoittautumiset  syyskaudeksi.</p>\n<p>Ennakkoilmoittautumiset 5.9. mennessä Hannan vahtimestarille (09) 3107 3933.</p>\n<p>Järjestäjänä Helmi ry ja asukastalo Hanna.&nbsp;&nbsp;</p>\n<p>Etenemme rauhallisesti ja lempeästi sallivassa ilmapiirissa. Menetelminä käytämme pilatesta, joogaa, shindoa, venettelyä ja rentoutumista. Aikaisempaa liikuntataitoa ei tarvita.&nbsp;</p>\n<p>Tervetuloa ryhmään sellaisenaan kuin olet!&nbsp;</p>\n<p>Varaathan mukaan liikuntaan sopivan asun ja oman alustan jos on.&nbsp;</p>\n<p>Huom! Jos et osallistu kolmena peräkkäisenä kertana vapautuu paikkasi seuraavalle.&nbsp;</p>\n<p>Ohjaajana Taina.&nbsp;&nbsp;&nbsp;</p>\n<p>---</p>\n<p>Helsingin kaupungin ylläpitämät Stadin asukastalot ovat kaikille avoimia harrastus- ja kohtaamispaikkoja. Tapahtumat ja retket ovat maksuttomia, harrastusmateriaalit ja matkat omakustanteisia. Ohjelmamuutokset ovat mahdollisia.</p>",
+        "images": [
+          {
+            "url": "https://api.hel.fi/linkedevents/media/images/12.9_Lempe%C3%A4%C3%A4_kehonhuoltoa_Hanna_LinkedEvents_-1440x810px.jpg",
+            "copyright_holder": "",
+            "license_type": {
+              "id": 1,
+              "name": "All rights reserved."
+            },
+            "media_id": null
+          }
+        ]
+      },
+      "tags": [
+        {
+          "id": "linkedevents:yso:p15624",
+          "name": "Pilates method"
+        },
+        {
+          "id": "linkedevents:yso:p1947",
+          "name": "well-being"
+        },
+        {
+          "id": "linkedevents:yso:p10727",
+          "name": "participation"
+        },
+        {
+          "id": "linkedevents:yso:p5590",
+          "name": "adults"
+        },
+        {
+          "id": "linkedevents:yso:p9270",
+          "name": "courses (societal objects)"
+        }
+      ],
+      "event_dates": {
+        "starting_day": "2022-11-21T10:15:00.000Z",
+        "ending_day": "2022-11-21T11:30:00.000Z",
+        "additional_description": null
+      }
+    },
+    {
+      "id": "helsinki:agbd5atjj4",
+      "name": {
+        "fi": "Lempeää kehonhuoltoa",
+        "en": null,
+        "sv": null,
+        "zh": null
+      },
+      "source_type": {
+        "id": 1,
+        "name": "LinkedEvents"
+      },
+      "info_url": "https://www.hel.fi/helsinki/fi/sosiaali-ja-terveyspalvelut/sosiaalinen-tuki-ja-toimeentulo/asukastalot/etela/hanna/",
+      "modified_at": "2022-07-28T18:08:04.654Z",
+      "location": {
+        "lat": 60.19024658203125,
+        "lon": 24.948030471801758,
+        "address": {
+          "street_address": "Sturenkatu 12",
+          "postal_code": "00510",
+          "locality": "Helsinki",
+          "neighbourhood": null
+        }
+      },
+      "description": {
+        "intro": "Lempeää kehonhuoltoa maanantaisin 12.9.-5.12.2022 ",
+        "body": "<p>Lempeää kehonhuoltoa –ryhmä maanantaisin klo 12.15.-13.30.&nbsp;</p>\n<p>Mukaan mahtuu 5 Helmi ry:stä ja 5 asukastalo Hannan kävijää. Sitovat ilmoittautumiset  syyskaudeksi.</p>\n<p>Ennakkoilmoittautumiset 5.9. mennessä Hannan vahtimestarille (09) 3107 3933.</p>\n<p>Järjestäjänä Helmi ry ja asukastalo Hanna.&nbsp;&nbsp;</p>\n<p>Etenemme rauhallisesti ja lempeästi sallivassa ilmapiirissa. Menetelminä käytämme pilatesta, joogaa, shindoa, venettelyä ja rentoutumista. Aikaisempaa liikuntataitoa ei tarvita.&nbsp;</p>\n<p>Tervetuloa ryhmään sellaisenaan kuin olet!&nbsp;</p>\n<p>Varaathan mukaan liikuntaan sopivan asun ja oman alustan jos on.&nbsp;</p>\n<p>Huom! Jos et osallistu kolmena peräkkäisenä kertana vapautuu paikkasi seuraavalle.&nbsp;</p>\n<p>Ohjaajana Taina.&nbsp;&nbsp;&nbsp;</p>\n<p>---</p>\n<p>Helsingin kaupungin ylläpitämät Stadin asukastalot ovat kaikille avoimia harrastus- ja kohtaamispaikkoja. Tapahtumat ja retket ovat maksuttomia, harrastusmateriaalit ja matkat omakustanteisia. Ohjelmamuutokset ovat mahdollisia.</p>",
+        "images": [
+          {
+            "url": "https://api.hel.fi/linkedevents/media/images/12.9_Lempe%C3%A4%C3%A4_kehonhuoltoa_Hanna_LinkedEvents_-1440x810px.jpg",
+            "copyright_holder": "",
+            "license_type": {
+              "id": 1,
+              "name": "All rights reserved."
+            },
+            "media_id": null
+          }
+        ]
+      },
+      "tags": [
+        {
+          "id": "linkedevents:yso:p15624",
+          "name": "Pilates method"
+        },
+        {
+          "id": "linkedevents:yso:p1947",
+          "name": "well-being"
+        },
+        {
+          "id": "linkedevents:yso:p10727",
+          "name": "participation"
+        },
+        {
+          "id": "linkedevents:yso:p5590",
+          "name": "adults"
+        },
+        {
+          "id": "linkedevents:yso:p9270",
+          "name": "courses (societal objects)"
+        }
+      ],
+      "event_dates": {
+        "starting_day": "2022-11-14T10:15:00.000Z",
+        "ending_day": "2022-11-14T11:30:00.000Z",
+        "additional_description": null
+      }
+    },
+    {
+      "id": "helsinki:agbd5atjay",
+      "name": {
+        "fi": "Lempeää kehonhuoltoa",
+        "en": null,
+        "sv": null,
+        "zh": null
+      },
+      "source_type": {
+        "id": 1,
+        "name": "LinkedEvents"
+      },
+      "info_url": "https://www.hel.fi/helsinki/fi/sosiaali-ja-terveyspalvelut/sosiaalinen-tuki-ja-toimeentulo/asukastalot/etela/hanna/",
+      "modified_at": "2022-07-28T18:08:04.654Z",
+      "location": {
+        "lat": 60.19024658203125,
+        "lon": 24.948030471801758,
+        "address": {
+          "street_address": "Sturenkatu 12",
+          "postal_code": "00510",
+          "locality": "Helsinki",
+          "neighbourhood": null
+        }
+      },
+      "description": {
+        "intro": "Lempeää kehonhuoltoa maanantaisin 12.9.-5.12.2022 ",
+        "body": "<p>Lempeää kehonhuoltoa –ryhmä maanantaisin klo 12.15.-13.30.&nbsp;</p>\n<p>Mukaan mahtuu 5 Helmi ry:stä ja 5 asukastalo Hannan kävijää. Sitovat ilmoittautumiset  syyskaudeksi.</p>\n<p>Ennakkoilmoittautumiset 5.9. mennessä Hannan vahtimestarille (09) 3107 3933.</p>\n<p>Järjestäjänä Helmi ry ja asukastalo Hanna.&nbsp;&nbsp;</p>\n<p>Etenemme rauhallisesti ja lempeästi sallivassa ilmapiirissa. Menetelminä käytämme pilatesta, joogaa, shindoa, venettelyä ja rentoutumista. Aikaisempaa liikuntataitoa ei tarvita.&nbsp;</p>\n<p>Tervetuloa ryhmään sellaisenaan kuin olet!&nbsp;</p>\n<p>Varaathan mukaan liikuntaan sopivan asun ja oman alustan jos on.&nbsp;</p>\n<p>Huom! Jos et osallistu kolmena peräkkäisenä kertana vapautuu paikkasi seuraavalle.&nbsp;</p>\n<p>Ohjaajana Taina.&nbsp;&nbsp;&nbsp;</p>\n<p>---</p>\n<p>Helsingin kaupungin ylläpitämät Stadin asukastalot ovat kaikille avoimia harrastus- ja kohtaamispaikkoja. Tapahtumat ja retket ovat maksuttomia, harrastusmateriaalit ja matkat omakustanteisia. Ohjelmamuutokset ovat mahdollisia.</p>",
+        "images": [
+          {
+            "url": "https://api.hel.fi/linkedevents/media/images/12.9_Lempe%C3%A4%C3%A4_kehonhuoltoa_Hanna_LinkedEvents_-1440x810px.jpg",
+            "copyright_holder": "",
+            "license_type": {
+              "id": 1,
+              "name": "All rights reserved."
+            },
+            "media_id": null
+          }
+        ]
+      },
+      "tags": [
+        {
+          "id": "linkedevents:yso:p15624",
+          "name": "Pilates method"
+        },
+        {
+          "id": "linkedevents:yso:p1947",
+          "name": "well-being"
+        },
+        {
+          "id": "linkedevents:yso:p10727",
+          "name": "participation"
+        },
+        {
+          "id": "linkedevents:yso:p5590",
+          "name": "adults"
+        },
+        {
+          "id": "linkedevents:yso:p9270",
+          "name": "courses (societal objects)"
+        }
+      ],
+      "event_dates": {
+        "starting_day": "2022-11-07T10:15:00.000Z",
+        "ending_day": "2022-11-07T11:30:00.000Z",
+        "additional_description": null
+      }
+    },
+    {
+      "id": "helsinki:agbd5atixq",
+      "name": {
+        "fi": "Lempeää kehonhuoltoa",
+        "en": null,
+        "sv": null,
+        "zh": null
+      },
+      "source_type": {
+        "id": 1,
+        "name": "LinkedEvents"
+      },
+      "info_url": "https://www.hel.fi/helsinki/fi/sosiaali-ja-terveyspalvelut/sosiaalinen-tuki-ja-toimeentulo/asukastalot/etela/hanna/",
+      "modified_at": "2022-07-28T18:08:04.654Z",
+      "location": {
+        "lat": 60.19024658203125,
+        "lon": 24.948030471801758,
+        "address": {
+          "street_address": "Sturenkatu 12",
+          "postal_code": "00510",
+          "locality": "Helsinki",
+          "neighbourhood": null
+        }
+      },
+      "description": {
+        "intro": "Lempeää kehonhuoltoa maanantaisin 12.9.-5.12.2022 ",
+        "body": "<p>Lempeää kehonhuoltoa –ryhmä maanantaisin klo 12.15.-13.30.&nbsp;</p>\n<p>Mukaan mahtuu 5 Helmi ry:stä ja 5 asukastalo Hannan kävijää. Sitovat ilmoittautumiset  syyskaudeksi.</p>\n<p>Ennakkoilmoittautumiset 5.9. mennessä Hannan vahtimestarille (09) 3107 3933.</p>\n<p>Järjestäjänä Helmi ry ja asukastalo Hanna.&nbsp;&nbsp;</p>\n<p>Etenemme rauhallisesti ja lempeästi sallivassa ilmapiirissa. Menetelminä käytämme pilatesta, joogaa, shindoa, venettelyä ja rentoutumista. Aikaisempaa liikuntataitoa ei tarvita.&nbsp;</p>\n<p>Tervetuloa ryhmään sellaisenaan kuin olet!&nbsp;</p>\n<p>Varaathan mukaan liikuntaan sopivan asun ja oman alustan jos on.&nbsp;</p>\n<p>Huom! Jos et osallistu kolmena peräkkäisenä kertana vapautuu paikkasi seuraavalle.&nbsp;</p>\n<p>Ohjaajana Taina.&nbsp;&nbsp;&nbsp;</p>\n<p>---</p>\n<p>Helsingin kaupungin ylläpitämät Stadin asukastalot ovat kaikille avoimia harrastus- ja kohtaamispaikkoja. Tapahtumat ja retket ovat maksuttomia, harrastusmateriaalit ja matkat omakustanteisia. Ohjelmamuutokset ovat mahdollisia.</p>",
+        "images": [
+          {
+            "url": "https://api.hel.fi/linkedevents/media/images/12.9_Lempe%C3%A4%C3%A4_kehonhuoltoa_Hanna_LinkedEvents_-1440x810px.jpg",
+            "copyright_holder": "",
+            "license_type": {
+              "id": 1,
+              "name": "All rights reserved."
+            },
+            "media_id": null
+          }
+        ]
+      },
+      "tags": [
+        {
+          "id": "linkedevents:yso:p15624",
+          "name": "Pilates method"
+        },
+        {
+          "id": "linkedevents:yso:p1947",
+          "name": "well-being"
+        },
+        {
+          "id": "linkedevents:yso:p10727",
+          "name": "participation"
+        },
+        {
+          "id": "linkedevents:yso:p5590",
+          "name": "adults"
+        },
+        {
+          "id": "linkedevents:yso:p9270",
+          "name": "courses (societal objects)"
+        }
+      ],
+      "event_dates": {
+        "starting_day": "2022-10-31T10:15:00.000Z",
+        "ending_day": "2022-10-31T11:30:00.000Z",
+        "additional_description": null
+      }
+    },
+    {
+      "id": "helsinki:agbd5atifi",
+      "name": {
+        "fi": "Lempeää kehonhuoltoa",
+        "en": null,
+        "sv": null,
+        "zh": null
+      },
+      "source_type": {
+        "id": 1,
+        "name": "LinkedEvents"
+      },
+      "info_url": "https://www.hel.fi/helsinki/fi/sosiaali-ja-terveyspalvelut/sosiaalinen-tuki-ja-toimeentulo/asukastalot/etela/hanna/",
+      "modified_at": "2022-07-28T18:08:04.654Z",
+      "location": {
+        "lat": 60.19024658203125,
+        "lon": 24.948030471801758,
+        "address": {
+          "street_address": "Sturenkatu 12",
+          "postal_code": "00510",
+          "locality": "Helsinki",
+          "neighbourhood": null
+        }
+      },
+      "description": {
+        "intro": "Lempeää kehonhuoltoa maanantaisin 12.9.-5.12.2022 ",
+        "body": "<p>Lempeää kehonhuoltoa –ryhmä maanantaisin klo 12.15.-13.30.&nbsp;</p>\n<p>Mukaan mahtuu 5 Helmi ry:stä ja 5 asukastalo Hannan kävijää. Sitovat ilmoittautumiset  syyskaudeksi.</p>\n<p>Ennakkoilmoittautumiset 5.9. mennessä Hannan vahtimestarille (09) 3107 3933.</p>\n<p>Järjestäjänä Helmi ry ja asukastalo Hanna.&nbsp;&nbsp;</p>\n<p>Etenemme rauhallisesti ja lempeästi sallivassa ilmapiirissa. Menetelminä käytämme pilatesta, joogaa, shindoa, venettelyä ja rentoutumista. Aikaisempaa liikuntataitoa ei tarvita.&nbsp;</p>\n<p>Tervetuloa ryhmään sellaisenaan kuin olet!&nbsp;</p>\n<p>Varaathan mukaan liikuntaan sopivan asun ja oman alustan jos on.&nbsp;</p>\n<p>Huom! Jos et osallistu kolmena peräkkäisenä kertana vapautuu paikkasi seuraavalle.&nbsp;</p>\n<p>Ohjaajana Taina.&nbsp;&nbsp;&nbsp;</p>\n<p>---</p>\n<p>Helsingin kaupungin ylläpitämät Stadin asukastalot ovat kaikille avoimia harrastus- ja kohtaamispaikkoja. Tapahtumat ja retket ovat maksuttomia, harrastusmateriaalit ja matkat omakustanteisia. Ohjelmamuutokset ovat mahdollisia.</p>",
+        "images": [
+          {
+            "url": "https://api.hel.fi/linkedevents/media/images/12.9_Lempe%C3%A4%C3%A4_kehonhuoltoa_Hanna_LinkedEvents_-1440x810px.jpg",
+            "copyright_holder": "",
+            "license_type": {
+              "id": 1,
+              "name": "All rights reserved."
+            },
+            "media_id": null
+          }
+        ]
+      },
+      "tags": [
+        {
+          "id": "linkedevents:yso:p15624",
+          "name": "Pilates method"
+        },
+        {
+          "id": "linkedevents:yso:p1947",
+          "name": "well-being"
+        },
+        {
+          "id": "linkedevents:yso:p10727",
+          "name": "participation"
+        },
+        {
+          "id": "linkedevents:yso:p5590",
+          "name": "adults"
+        },
+        {
+          "id": "linkedevents:yso:p9270",
+          "name": "courses (societal objects)"
+        }
+      ],
+      "event_dates": {
+        "starting_day": "2022-10-24T09:15:00.000Z",
+        "ending_day": "2022-10-24T10:30:00.000Z",
+        "additional_description": null
+      }
+    }
+  ],
+  "tags": {
+    "linkedevents:yso:p10727": "participation",
+    "linkedevents:yso:p15624": "Pilates method",
+    "linkedevents:yso:p19245": "workshops",
+    "linkedevents:yso:p1947": "well-being",
+    "linkedevents:yso:p5231": "meditation",
+    "linkedevents:yso:p5590": "adults",
+    "linkedevents:yso:p6213": "wheel throwing",
+    "linkedevents:yso:p9270": "courses (societal objects)"
+  }
+}

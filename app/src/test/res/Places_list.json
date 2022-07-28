@@ -1,0 +1,514 @@
+
+  {
+    "meta": {
+      "count": "2380",
+      "next": "http://open-api.myhelsinki.fi/v2/places/?distance_filter=60.188,24.950,10&limit=10&start=10"
+    },
+    "data": [
+      {
+        "id": "266",
+        "name": {
+          "fi": "Brahenkentän tekojääkenttä",
+          "en": "Brahe sports field artificial ice rink (Brahenkenttä)",
+          "sv": "Braheplanens konstisbana",
+          "zh": null
+        },
+        "source_type": {
+          "id": 2,
+          "name": "Matko"
+        },
+        "info_url": "https://palvelukartta.hel.fi/unit/41549",
+        "modified_at": "2021-12-15T09:04:37.000Z",
+        "location": {
+          "lat": 60.187564849853516,
+          "lon": 24.949596405029297,
+          "address": {
+            "street_address": "Helsinginkatu 25",
+            "postal_code": "00510",
+            "locality": "Helsinki",
+            "neighbourhood": "Alppiharju"
+          }
+        },
+        "description": {
+          "intro": "Brahenkentän tekojääkentällä on talvisin tarjolla yleisöluistelua musiikin tahdittamana.",
+          "body": "Brahenkentän tekojääkentällä on talvisin tarjolla yleisöluistelua musiikin tahdittamana. Kenttä on jaettu kahteen osaan: mailojen kanssa ja ilman mailoja luisteleville. Pika- ja retkiluistimilla luistelu on kielletty yleisöluisteluaikoina. Kahvila. Luistimia, kypäriä ja mailoja voi vuokrata paikan päältä. Kesäisin Brahenkentälle voi mennä fiilistelemään jalkapallo-otteluita tai pelaamaan esim. koripalloa.",
+          "images": []
+        },
+        "tags": [
+          {
+            "id": "main:917",
+            "name": "sports"
+          },
+          {
+            "id": "sub:36",
+            "name": "Ice skating"
+          }
+        ],
+        "extra_searchwords": [],
+        "opening_hours_url": "https://hauki.api.hel.fi/v1/resource/tprek:266/opening_hours/?start_date=0w&end_date=0w"
+      },
+      {
+        "id": "2768",
+        "name": {
+          "fi": "Brahenkenttä",
+          "en": "Brahenkenttä - Brahe Sports Field",
+          "sv": "Braheplanen",
+          "zh": null
+        },
+        "source_type": {
+          "id": 2,
+          "name": "Matko"
+        },
+        "info_url": "https://palvelukartta.hel.fi/fi/unit/41995",
+        "modified_at": "2021-11-12T10:28:59.000Z",
+        "location": {
+          "lat": 60.18755340576172,
+          "lon": 24.949554443359375,
+          "address": {
+            "street_address": "Helsinginkatu 25",
+            "postal_code": "00510",
+            "locality": "Helsinki",
+            "neighbourhood": "Alppiharju"
+          }
+        },
+        "description": {
+          "intro": "Brahenkenttä on urheilukenttä Alppiharjussa. Kesäisin se toimii pääasiassa jalkapallokenttänä sekä koripallokenttänä. Talvisin se on tekojäärata, jossa pelataan jääpalloa ja luistellaan. Tarjolla tällöin myös vuokraluistimia.",
+          "body": "Brahenkenttä on urheilukenttä Alppiharjussa. Kesäisin se toimii pääasiassa jalkapallokenttänä sekä koripallokenttänä. Talvisin se on tekojäärata, jossa pelataan jääpalloa ja luistellaan. Tarjolla tällöin myös vuokraluistimia.",
+          "images": []
+        },
+        "tags": [
+          {
+            "id": "main:917",
+            "name": "sports"
+          },
+          {
+            "id": "sub:127",
+            "name": "Football"
+          },
+          {
+            "id": "sub:30",
+            "name": "Arena"
+          },
+          {
+            "id": "sub:212",
+            "name": "Basketball"
+          }
+        ],
+        "extra_searchwords": [],
+        "opening_hours_url": "https://hauki.api.hel.fi/v1/resource/tprek:2768/opening_hours/?start_date=0w&end_date=0w"
+      },
+      {
+        "id": "3497",
+        "name": {
+          "fi": "Taverna Zorbas",
+          "en": "Taverna Zorbas",
+          "sv": "Taverna Zorbas",
+          "zh": null
+        },
+        "source_type": {
+          "id": 2,
+          "name": "Matko"
+        },
+        "info_url": "http://zorbas.fi/",
+        "modified_at": "2021-11-12T12:28:17.000Z",
+        "location": {
+          "lat": 60.18758010864258,
+          "lon": 24.948095321655273,
+          "address": {
+            "street_address": "Läntinen Brahenkatu 4",
+            "postal_code": "00510",
+            "locality": "Helsinki",
+            "neighbourhood": "Alppiharju"
+          }
+        },
+        "description": {
+          "intro": "Taverna Zorbas on korkeatasoinen kreikkalainen ravintola Alppilassa Brahen kenttää vastapäätä. Ravintola tarjoilee maukkaita kreikkalaisia kasvis-, kala- ja liharuokia sekä herkullisia jälkiruokia.",
+          "body": "Taverna Zorbas on korkeatasoinen kreikkalainen ravintola Alppilassa Brahen kenttää vastapäätä. Ravintola tarjoilee maukkaita kreikkalaisia kasvis-, kala- ja liharuokia sekä herkullisia jälkiruokia.",
+          "images": []
+        },
+        "tags": [
+          {
+            "id": "main:577",
+            "name": "restaurants"
+          },
+          {
+            "id": "sub:237",
+            "name": "Greek"
+          }
+        ],
+        "extra_searchwords": [],
+        "opening_hours_url": "https://hauki.api.hel.fi/v1/resource/tprek:3497/opening_hours/?start_date=0w&end_date=0w"
+      },
+      {
+        "id": "2914",
+        "name": {
+          "fi": "Kulku-Katin Poika",
+          "en": "Kulku-Katin Poika",
+          "sv": null,
+          "zh": null
+        },
+        "source_type": {
+          "id": 2,
+          "name": "Matko"
+        },
+        "info_url": "https://www.kulkukatinpoika.fi/",
+        "modified_at": "2021-11-12T10:59:51.000Z",
+        "location": {
+          "lat": 60.1884765625,
+          "lon": 24.948083877563477,
+          "address": {
+            "street_address": "Läntinen Brahenkatu 12",
+            "postal_code": "00510",
+            "locality": "Helsinki",
+            "neighbourhood": "Alppiharju"
+          }
+        },
+        "description": {
+          "intro": "Kulku-Katin Poika on erityisesti suomenkieliseen sarjakuvaan erikoistunut liike, josta löytyy uudet, käytetyt ja keräilysarjakuvat.",
+          "body": "Kulku-Katin Poika on erityisesti suomenkieliseen sarjakuvaan erikoistunut liike, josta löytyy uudet, käytetyt ja keräilysarjakuvat.",
+          "images": []
+        },
+        "tags": [
+          {
+            "id": "main:490",
+            "name": "shopping"
+          },
+          {
+            "id": "sub:100",
+            "name": "Antiquariat"
+          },
+          {
+            "id": "sub:101",
+            "name": "Bookstore"
+          }
+        ],
+        "extra_searchwords": [],
+        "opening_hours_url": "https://hauki.api.hel.fi/v1/resource/tprek:2914/opening_hours/?start_date=0w&end_date=0w"
+      },
+      {
+        "id": "3501",
+        "name": {
+          "fi": "On the Rocks Kallio",
+          "en": "On the Rocks Kallio",
+          "sv": "On the Rocks Kallio",
+          "zh": null
+        },
+        "source_type": {
+          "id": 2,
+          "name": "Matko"
+        },
+        "info_url": "https://www.rockskallio.fi/",
+        "modified_at": "2021-11-12T13:51:28.000Z",
+        "location": {
+          "lat": 60.188720703125,
+          "lon": 24.952228546142578,
+          "address": {
+            "street_address": "Porvoonkatu 1",
+            "postal_code": "00510",
+            "locality": "Helsinki",
+            "neighbourhood": "Alppiharju"
+          }
+        },
+        "description": {
+          "intro": "On the Rocks Kallio on legendaarisen keikkapaikan ja musiikkibaarin On the Rocksin sisarkuppila Kalliossa. Viihtyisässä musiikkibaari ja ravintola On the Rocks Kalliossa tarjoillaan lounasta arkisin ja iltaisin sekä viikonloppuisin tarjolla on rentoa pubiruokaa. On the Rocks Kalliossa on tapahtumia laidasta laitaan, musiikkiohjelman lisäksi tarjolla on visailuja ja baaripelejä sekä rentoa hengailua. Ravintolassa on myös ilmainen biljardi asiakkaille.",
+          "body": "On the Rocks Kallio on legendaarisen keikkapaikan ja musiikkibaarin On the Rocksin sisarkuppila Kalliossa. Viihtyisässä musiikkibaari ja ravintola On the Rocks Kalliossa tarjoillaan lounasta arkisin ja iltaisin sekä viikonloppuisin tarjolla on rentoa pubiruokaa. On the Rocks Kalliossa on tapahtumia laidasta laitaan, musiikkiohjelman lisäksi tarjolla on visailuja ja baaripelejä sekä rentoa hengailua. Ravintolassa on myös ilmainen biljardi asiakkaille.",
+          "images": []
+        },
+        "tags": [
+          {
+            "id": "sub:105",
+            "name": "Rock"
+          },
+          {
+            "id": "sub:52",
+            "name": "Bar"
+          },
+          {
+            "id": "main:869",
+            "name": "bars and pubs"
+          },
+          {
+            "id": "sub:108",
+            "name": "Billiards"
+          },
+          {
+            "id": "sub:53",
+            "name": "Live music"
+          }
+        ],
+        "extra_searchwords": [],
+        "opening_hours_url": "https://hauki.api.hel.fi/v1/resource/tprek:3501/opening_hours/?start_date=0w&end_date=0w"
+      },
+      {
+        "id": "53",
+        "name": {
+          "fi": "Scandic Kallio",
+          "en": "Scandic Kallio",
+          "sv": "Scandic Kallio",
+          "zh": null
+        },
+        "source_type": {
+          "id": 2,
+          "name": "Matko"
+        },
+        "info_url": "https://www.scandichotels.fi/hotellit/suomi/helsinki/scandic-kallio",
+        "modified_at": "2021-11-12T12:19:44.000Z",
+        "location": {
+          "lat": 60.186851501464844,
+          "lon": 24.948158264160156,
+          "address": {
+            "street_address": "Läntinen Brahenkatu 2",
+            "postal_code": "00510",
+            "locality": "Helsinki",
+            "neighbourhood": "Alppiharju"
+          }
+        },
+        "description": {
+          "intro": "Uudistettu ja rento hotelli sijaitsee keskeisellä paikalla Helsingin Kalliossa. Täällä nukut hyvin ja nautit boheemista tunnelmasta. Hotelli on hyvien kulkuyhteyksien ympäröimä ja kaikki pääkaupungin palvelut ovat kätevästi saavutettavissa. Huoneiden värimaailmassa sekä huonekaluissa näkyy Kallion urbaani kaupunkilaistunnelma, unohtamatta kuitenkaan maanläheisyyttä. Osassa huoneista on näkymä Kallion vilkkaille kaduille, toisissa rauhalliselle sisäpihalle. Hotellin käytävillä voi ihastella katutaideaiheisia printtejä. Hotellin saunat lämpiävät päivittäin. Käytössä on myös vuorokauden ympäri palveleva shop sekä maksuton langaton internetyhteys kaikissa tiloissa. Tunnelmallisessa baarissa viihtyvät niin hotellin vieraat kuin paikalliset.",
+          "body": "Uudistettu ja rento hotelli sijaitsee keskeisellä paikalla Helsingin Kalliossa. Täällä nukut hyvin ja nautit boheemista tunnelmasta. Hotelli on hyvien kulkuyhteyksien ympäröimä ja kaikki pääkaupungin palvelut ovat kätevästi saavutettavissa. Huoneiden värimaailmassa sekä huonekaluissa näkyy Kallion urbaani kaupunkilaistunnelma, unohtamatta kuitenkaan maanläheisyyttä. Osassa huoneista on näkymä Kallion vilkkaille kaduille, toisissa rauhalliselle sisäpihalle. Hotellin käytävillä voi ihastella katutaideaiheisia printtejä. Hotellin saunat lämpiävät päivittäin. Käytössä on myös vuorokauden ympäri palveleva shop sekä maksuton langaton internetyhteys kaikissa tiloissa. Tunnelmallisessa baarissa viihtyvät niin hotellin vieraat kuin paikalliset.",
+          "images": []
+        },
+        "tags": [
+          {
+            "id": "main:914",
+            "name": "accommodation"
+          },
+          {
+            "id": "sub:241",
+            "name": "Hotel"
+          },
+          {
+            "id": "sub:17",
+            "name": "Sauna"
+          }
+        ],
+        "extra_searchwords": [],
+        "opening_hours_url": "https://hauki.api.hel.fi/v1/resource/tprek:53/opening_hours/?start_date=0w&end_date=0w"
+      },
+      {
+        "id": "4223",
+        "name": {
+          "fi": "Armo Pizza & Bar",
+          "en": "Armo Pizza & Bar",
+          "sv": null,
+          "zh": null
+        },
+        "source_type": {
+          "id": 2,
+          "name": "Matko"
+        },
+        "info_url": "https://armopizzabar.fi/",
+        "modified_at": "2021-11-12T10:16:34.000Z",
+        "location": {
+          "lat": 60.18711471557617,
+          "lon": 24.952402114868164,
+          "address": {
+            "street_address": "Helsinginkatu 21",
+            "postal_code": "00510",
+            "locality": "Helsinki",
+            "neighbourhood": "Alppiharju"
+          }
+        },
+        "description": {
+          "intro": "Kalliossa sijaitseva Armo on rento ja tyylikäs pizzabaari jossa valmistetaan hapanjuuritaikinasta käsin leivottuja artesaanipizzoja. Yksinkertaisista ja laadukkaista raaka-aineista syntyy täydellinen pizza!",
+          "body": "Kalliossa sijaitseva Armo on rento ja tyylikäs pizzabaari jossa valmistetaan hapanjuuritaikinasta käsin leivottuja artesaanipizzoja. Yksinkertaisista ja laadukkaista raaka-aineista syntyy täydellinen pizza!",
+          "images": []
+        },
+        "tags": [
+          {
+            "id": "main:577",
+            "name": "restaurants"
+          },
+          {
+            "id": "sub:186",
+            "name": "Pizza"
+          }
+        ],
+        "extra_searchwords": [],
+        "opening_hours_url": "https://hauki.api.hel.fi/v1/resource/tprek:4223/opening_hours/?start_date=0w&end_date=0w"
+      },
+      {
+        "id": "3137",
+        "name": {
+          "fi": "Roskapankki",
+          "en": "Roskapankki",
+          "sv": "Roskapankki",
+          "zh": null
+        },
+        "source_type": {
+          "id": 2,
+          "name": "Matko"
+        },
+        "info_url": "",
+        "modified_at": "2021-11-12T13:51:28.000Z",
+        "location": {
+          "lat": 60.186767578125,
+          "lon": 24.95174217224121,
+          "address": {
+            "street_address": "Helsinginkatu 20",
+            "postal_code": "00530",
+            "locality": "Helsinki",
+            "neighbourhood": "Kallio"
+          }
+        },
+        "description": {
+          "intro": "Soittoruokala Roskapankki on legendaarinen kuppila Kalliossa joka on tunnettu oluistaan, hinnoistaan, moninaisesta asiakaskunnastaan sekä aidosta Kalliolaisesta tunnelmasta.",
+          "body": "Soittoruokala Roskapankki on legendaarinen kuppila Kalliossa joka on tunnettu oluistaan, hinnoistaan, moninaisesta asiakaskunnastaan sekä aidosta Kalliolaisesta tunnelmasta.",
+          "images": []
+        },
+        "tags": [
+          {
+            "id": "main:869",
+            "name": "bars and pubs"
+          },
+          {
+            "id": "sub:49",
+            "name": "Pub"
+          }
+        ],
+        "extra_searchwords": [],
+        "opening_hours_url": "https://hauki.api.hel.fi/v1/resource/tprek:3137/opening_hours/?start_date=0w&end_date=0w"
+      },
+      {
+        "id": "3636",
+        "name": {
+          "fi": "Divari Kaleva",
+          "en": "Divari Kaleva",
+          "sv": "Divari Kaleva",
+          "zh": null
+        },
+        "source_type": {
+          "id": 2,
+          "name": "Matko"
+        },
+        "info_url": "http://divarikaleva.com",
+        "modified_at": "2021-11-12T10:34:02.000Z",
+        "location": {
+          "lat": 60.187461853027344,
+          "lon": 24.9528751373291,
+          "address": {
+            "street_address": "Fleminginkatu 20",
+            "postal_code": "00510",
+            "locality": "Helsinki",
+            "neighbourhood": "Alppiharju"
+          }
+        },
+        "description": {
+          "intro": "Kalliossa sijaitsevasta Divari Kalevasta löytyy suuri valikoima lehtiä ja kirjoja, laaja valikoima vinyylejä, myös klassista musiikkia, sekä iso CD valikoima.",
+          "body": "Kalliossa sijaitsevasta Divari Kalevasta löytyy suuri valikoima lehtiä ja kirjoja, laaja valikoima vinyylejä, myös klassista musiikkia, sekä iso CD valikoima.",
+          "images": []
+        },
+        "tags": [
+          {
+            "id": "main:490",
+            "name": "shopping"
+          },
+          {
+            "id": "sub:100",
+            "name": "Antiquariat"
+          },
+          {
+            "id": "sub:104",
+            "name": "Record store"
+          },
+          {
+            "id": "sub:68",
+            "name": "Second hand"
+          }
+        ],
+        "extra_searchwords": [],
+        "opening_hours_url": "https://hauki.api.hel.fi/v1/resource/tprek:3636/opening_hours/?start_date=0w&end_date=0w"
+      },
+      {
+        "id": "3593",
+        "name": {
+          "fi": "Fargo Vintage Kallio",
+          "en": "Fargo Vintage Kallio",
+          "sv": "Fargo Vintage Kallio",
+          "zh": null
+        },
+        "source_type": {
+          "id": 2,
+          "name": "Matko"
+        },
+        "info_url": "https://www.fargoshop.fi/",
+        "modified_at": "2021-11-16T10:34:15.000Z",
+        "location": {
+          "lat": 60.187461853027344,
+          "lon": 24.9528751373291,
+          "address": {
+            "street_address": "Fleminginkatu 20",
+            "postal_code": "00500",
+            "locality": "Helsinki",
+            "neighbourhood": "Alppiharju"
+          }
+        },
+        "description": {
+          "intro": "Vintage- ja designsisustuskauppa Kalliossa jossa 50-60 luvun huonekaluja, valaisimia, pientavaraa sekä vinyylejä.",
+          "body": "Vintage- ja designsisustuskauppa Kalliossa jossa 50-60 luvun huonekaluja, valaisimia, pientavaraa sekä vinyylejä.",
+          "images": []
+        },
+        "tags": [
+          {
+            "id": "sub:67",
+            "name": "Interior design"
+          },
+          {
+            "id": "main:923",
+            "name": "second hand goods (circular economy)"
+          },
+          {
+            "id": "sub:69",
+            "name": "Antique"
+          },
+          {
+            "id": "sub:68",
+            "name": "Second hand"
+          },
+          {
+            "id": "main:490",
+            "name": "shopping"
+          },
+          {
+            "id": "sub:211",
+            "name": "Furniture"
+          },
+          {
+            "id": "sub:23",
+            "name": "Design"
+          }
+        ],
+        "extra_searchwords": [],
+        "opening_hours_url": "https://hauki.api.hel.fi/v1/resource/tprek:3593/opening_hours/?start_date=0w&end_date=0w"
+      }
+    ],
+    "tags": {
+      "main:490": "shopping",
+      "main:577": "restaurants",
+      "main:869": "bars and pubs",
+      "main:914": "accommodation",
+      "main:917": "sports",
+      "main:923": "second hand goods (circular economy)",
+      "sub:100": "Antiquariat",
+      "sub:101": "Bookstore",
+      "sub:104": "Record store",
+      "sub:105": "Rock",
+      "sub:108": "Billiards",
+      "sub:127": "Football",
+      "sub:17": "Sauna",
+      "sub:186": "Pizza",
+      "sub:211": "Furniture",
+      "sub:212": "Basketball",
+      "sub:23": "Design",
+      "sub:237": "Greek",
+      "sub:241": "Hotel",
+      "sub:30": "Arena",
+      "sub:36": "Ice skating",
+      "sub:49": "Pub",
+      "sub:52": "Bar",
+      "sub:53": "Live music",
+      "sub:67": "Interior design",
+      "sub:68": "Second hand",
+      "sub:69": "Antique"
+    }
+  }

@@ -24,13 +24,11 @@ class FragmentBottomSheetDetailViewModel @Inject constructor(
                 .getPlaceDetail(id)
                 .delay(1000, TimeUnit.MILLISECONDS)
                 .subscribe({
-                    Log.e("TAG", "getPlacesDetail: ${it.isSuccessful} ${it.errorBody()?.string()}")
                     if (it.isSuccessful) {
-                        Log.e("TAG", "getPlaces: ${it.body()?.name?.en}")
                         detailLiveData.postValue(it.body())
                     }
                 }, {
-                    Log.e("TAG", "getPlaces: $it")
+                    errorLiveData.postValue(it)
                 })
 
         addDisposable(disposable[0])

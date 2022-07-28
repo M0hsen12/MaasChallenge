@@ -56,12 +56,6 @@ abstract class BaseBottomSheetFragment<T : ViewDataBinding, V : BaseViewModel> :
         return binding.root
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        val fragments = childFragmentManager.fragments
-        fragments.takeIf { it.isNotEmpty() }
-            ?.let { it[it.size - 1]?.onActivityResult(requestCode, resultCode, data) }
-    }
 
     override fun onRequestPermissionsResult(
         requestCode: Int,

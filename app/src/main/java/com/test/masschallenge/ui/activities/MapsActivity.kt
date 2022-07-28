@@ -58,20 +58,23 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
     @Inject
     lateinit var mViewModelFactoryActivity: InjectionViewModelProvider<MapsActivityViewModel>
     override fun getLayoutId() = R.layout.activity_maps
-    private val listPlaces = ArrayList<LatLng>()
     lateinit var progressDialog: Dialog
     private val _mapLocationInput = BehaviorSubject.create<LatLng>()
     private val mapLocationInput = _mapLocationInput.toFlowable(BackpressureStrategy.LATEST)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        initUI()
+        observeData()
+    }
+
+    private fun initUI() {
         viewModel = mViewModelFactoryActivity.get(this, MapsActivityViewModel::class)
         isOnCreate = true
         progressDialog = materialSimpleMapProgressDialog(this)
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
-        observeData()
     }
 
     private fun observeData() {
@@ -79,21 +82,27 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
             setupMarkers(getAllTheLatLng(it))
         }
 
+        viewModel?.errorLiveData?.observe(this) {
+            Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     private fun getAllTheLatLng(triple: Triple<Places, Activities, Events>): ArrayList<MapMarkerEntity> {
         val markerList = ArrayList<MapMarkerEntity>()
 
-        markerList.addAll(placesListToMap(triple.first.data.orEmpty()))
-        markerList.addAll(activitiesListToMap(triple.second.rows.orEmpty()))
-        markerList.addAll(eventsListToMap(triple.third.data.orEmpty()))
+        viewModel?.apply {
+            markerList.addAll(placesListToMapMarker(triple.first.data.orEmpty()))
+            markerList.addAll(activitiesListToMapMarker(triple.second.rows.orEmpty()))
+            markerList.addAll(eventsListToMapMarker(triple.third.data.orEmpty()))
+        }
+
 
         return markerList
     }
 
 
     private fun setupMarkers(markerList: ArrayList<MapMarkerEntity>) {
-        Log.e("TAG", "setupMarkers: ${markerList.size}")
 
         disposable.add(
             Observable.fromIterable(markerList).concatMap {
@@ -101,21 +110,14 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
             }
                 .subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
                 .subscribe { myMarker ->
-                    Log.e("TAG", "setupMarkers:${myMarker.type} ${myMarker.title}${myMarker.lng} -- ${myMarker.lat}")
+
                     val a = mMap.addMarker(
                         MarkerOptions()
                             .position(LatLng(myMarker.lat ?: 0.0, myMarker.lng ?: 0.0))
                             .title(myMarker.title)
                             .snippet(getString(R.string.clickForInfo))
                             .icon(
-                                BitmapDescriptorFactory.defaultMarker(
-                                    when (myMarker.type) {
-                                        PLACES_KEY -> BitmapDescriptorFactory.HUE_BLUE
-                                        EVENTS_KEY -> BitmapDescriptorFactory.HUE_ORANGE
-                                        else -> BitmapDescriptorFactory.HUE_RED
-
-                                    }
-                                )
+                                BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)
                             )
                     )
                     a?.tag = myMarker.id
@@ -193,7 +195,6 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe {
-                    Log.e("CCC", "getLocation: ${it.latitude} -- ${it.longitude}")
                     viewModel?.getPlaces(it.latitude, it.longitude)
                 }
         )
@@ -207,10 +208,8 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        Log.e("TAG", "onRequestPermissionsResult: $requestCode")
         if (requestCode == PERMISSION_CODE) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "Permission Granted", Toast.LENGTH_SHORT).show()
                 tryGetUserLocation()
             } else
                 Toast.makeText(
@@ -239,16 +238,13 @@ class MapsActivity : BaseActivity<ActivityMapsBinding, MapsActivityViewModel>(),
 
 
     override fun onLocationChanged(p0: Location) {
-        val lat = 60.188
-        val lng = 24.950
-        val helsinki = LatLng(60.188, 24.950)
 
-        mMap.addMarker(MarkerOptions().position(helsinki).title("Marker in helsinki"))
+
         progressDialog.takeIf { it.isShowing }?.dismiss()
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(lat, lng), 16F))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(p0.latitude, p0.longitude), 16F))
         mMap.setOnMarkerClickListener(this)
 
-        viewModel?.getPlaces(lat, lng)
+        viewModel?.getPlaces(p0.latitude, p0.longitude)
     }
 
 

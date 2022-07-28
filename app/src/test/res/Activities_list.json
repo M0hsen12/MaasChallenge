@@ -1,0 +1,108 @@
+{
+  "offset": 0,
+  "count": 1,
+  "rows": [
+    {
+      "id": "13e8b07d-1da2-42df-bca9-34d5d8940a5e",
+      "updated": "2022-06-02T12:14:41.495544+00:00",
+      "descriptions": {
+        "en": {
+          "name": "Sea kayak and wildcamp in Helsinki",
+          "description": "Kayaking in the Helsinki archipelago is a great activity! The guides will lead you to the beautiful marine nature. A great way to get out and feel the nature!\n\nThe tour will start from Vuosaari Paddling Center and the tour will find its way through the labyrinth of islands. On the way several breaks will be held on the water and at the islands. In the evening the group will camp on one of the many islands.\n\nThe next morning the tour will continue on the water right after breakfast and an optional morning swim. The tours will continue through the archipelago and then head back to the paddling center. When ashore a healthy meal will be enjoyed on the seaside terrace recounting the highlights of our adventure!\n\n* Place:Vuosaari Paddling Center\n* Paricipants: max. 8 persons\n* Schedule: The tour starts at 9 am on Saturday and return back at the paddling center latest 4 pm on Sunday. Please check the dates and availability in the booking calendar\n* Requirements: No previous kayaking experience is required, but you will kayak approximately 20 - 25 kilometres during the weekend. So a normal level of fitness is required. Camping on a remote island without services will take place, so an adventurous spirit and some previous camping experience is recommended.\n* Price includes: \n- 2 days of guided sea kayaking\n- 1 night camping on a remote island\n- Professional English-speaking guide\n- All kayaking equipment\n\n* Price does not include:\n- Camping equipment\n- Food and snacks"
+        },
+        "fi": {
+          "name": "Kahden päivän melontaretki Itä-Helsingin saaristossa",
+          "description": "Tämä melontaretki suuntautuu Itä-Helsingin vesille ja alueen upeaan saaristoon. Varaa paikka retkellä itsellesi – melonta on upea harrastus!\n\nTutustu Itä-Helsingin upeaan saaristoon ja vietä telttayö saaressa. Kokeneet oppaat vievät ryhmän upeaan meriluontoon! Tällä retkellä pääset irti arjesta! Retki alkaa lauantai-aamuna Vuosaaren melontakeskuksesta. Kajakit pakataan, perus asiat käydään rannassa läpi ja suunnataan vesille.\n\n* Paikka: Vuosaaren Melontakeskus, Helsinki.\n* Osallistujamäärä: 1-8 henkeä.\n* Aikataulu: Lauantaina tavataan melontakeskuksella klo 9. Palataan takaisin sunnuntaina klo 16 mennessä. Katso retkipäivät ja saatavuus varauskalenterista.\n* Ohjaaja: Natura Vivan oppaat\n* Retken vaativuus: Retkellä melotaan rentoa tahtia, ja kahden päivän aikana melontamatkaa kertyy yhteensä noin 20–25 kilometriä. Aikaisempi melontakokemus ja/tai kohtuullinen fyysinen kunto on suositeltavaa. Yöpyminen tapahtuu teltassa, joten aikasempi kokemus telttailusta on eduksi.\n* Hintaan sisältyy: Opastus, kajakki ja muut melontavarusteet\n* Hintaan ei sisälly: Ruoka, ruuanvalmistusvälineet, majoittumisvälineet. Mikäli haluat vuokrata retken ajaksi keittimet ja majoitusvälineet mainitse asiasta tilauksen lisätietokentässä tai laita viestiä info@naturaviva.fi"
+        }
+      },
+      "duration": "2",
+      "durationType": "days",
+      "open": {
+        "sunday": {
+          "open": true,
+          "from": null,
+          "to": null
+        },
+        "tuesday": {
+          "open": true,
+          "from": null,
+          "to": null
+        },
+        "wednesday": {
+          "open": true,
+          "from": null,
+          "to": null
+        },
+        "monday": {
+          "open": true,
+          "from": null,
+          "to": null
+        },
+        "friday": {
+          "open": true,
+          "from": null,
+          "to": null
+        },
+        "thursday": {
+          "open": true,
+          "from": null,
+          "to": null
+        },
+        "saturday": {
+          "open": true,
+          "from": null,
+          "to": null
+        }
+      },
+      "media": [
+        {
+          "id": "222bf2ae-0ed8-472c-9f3e-54b8ba74d39e",
+          "kind": "image",
+          "copyright": "Natura Viva",
+          "name": "007730c0-d2a9-11ec-baab-1bce364ca529.jpeg",
+          "alt": "A group kayaking in the Helsinki archipelago",
+          "originalUrl": "https://cdn-datahub.visitfinland.com/images/007730c0-d2a9-11ec-baab-1bce364ca529.jpeg",
+          "smallUrl": "https://cdn-datahub.visitfinland.com/images/007730c0-d2a9-11ec-baab-1bce364ca529.jpeg?s=240",
+          "largeUrl": "https://cdn-datahub.visitfinland.com/images/007730c0-d2a9-11ec-baab-1bce364ca529.jpeg?s=1920"
+        }
+      ],
+      "address": {
+        "location": {
+          "lat": 60.1979025,
+          "long": 25.1284516
+        },
+        "postalCode": "00980",
+        "streetName": "Harbonkatu 13",
+        "city": "Helsinki"
+      },
+      "company": {
+        "name": "Natura Viva",
+        "businessId": "0649766-0",
+        "email": "info@naturaviva.fi",
+        "phone": "+358 10 292 4030"
+      },
+      "tags": [
+        "coast_archipelago",
+        "nature_excursion",
+        "paddling_rafting",
+        "water_activities",
+        "wellbeing_from_nature"
+      ],
+      "priceEUR": {
+        "from": 249,
+        "to": null,
+        "pricingType": "chargeable"
+      },
+      "availableMonths": [
+        "june",
+        "july",
+        "august"
+      ],
+      "meantFor": [
+        "b2c"
+      ],
+      "siteUrl": "https://naturaviva.fi/en_US/sign-up-for-a-paddling-tour-in-eastern-helsinki-039-s-archipelago/sea-kayak-and-wildcamp-in-helsinki",
+      "storeUrl": "https://naturaviva.fi/en_US/sign-up-for-a-paddling-tour-in-eastern-helsinki-039-s-archipelago/sea-kayak-and-wildcamp-in-helsinki"
+    }
+  ]
+}
